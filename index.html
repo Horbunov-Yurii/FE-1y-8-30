@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -41,7 +46,7 @@
     <main>
         <section class="hiro" id="qwe">
             <div class="container">
-                <h1 class="hiro-title">Meet the award-winning razor</h1>
+                <h1 class="hiro-title animate__animated animate__flipInY">Meet the award-winning razor</h1>
                 <p class="hiro-text">And daily essentials to upgrade your routine.</p>
                 <button type="button" class="hiro-btm" data-modal-open>GET STARTED</button>
             </div>
@@ -68,19 +73,22 @@
                         <p class="roduct-text">Handle, holder, 2 blades</p>
                         <button class="product-btn" type="button">Get Started – $10</button>
                     </li>
-                    <li class="product-av">
+                    <li data-aos="flip-up" class="product-av">
                         <img src="./img/cream.jpg" alt="" class="product-img">
                         <h2 class="product-title">Shave Cream</h2>
                         <p class="roduct-text">Rich, fluffy protection</p>
                         <button class="product-btn" type="button">Add – $8</button>
                     </li>
-                    <li class="product-av">
+                    <li data-aos="flip-right" class="product-av">
                         <img src="./img/wipes.jpg" alt="" class="product-img">
                         <h2 class="product-title">Wonder Wipes</h2>
                         <p class="roduct-text">Gentle, makeup removing</p>
                         <button class="product-btn" type="button">Get Started – $9</button>
                     </li>
-                    <li class="product-av">
+                    <li data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500" class="product-av">
                         <img src="./img/salve.jpg" alt="" class="product-img">
                         <h2 class="product-title">Super Salve</h2>
                         <p class="roduct-text">Pick a color</p>
@@ -226,6 +234,10 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -159,6 +159,7 @@ body {
   align-items: center;
   position: relative;
   border-radius: 5px;
+  animation-duration: 5000ms;
   /* overflow: hidden; */
 }
 
